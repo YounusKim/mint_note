@@ -7,6 +7,7 @@ class DrawerPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
+      backgroundColor: Colors.white,
       shape: RoundedRectangleBorder(),
       child: Padding(
         padding: const EdgeInsets.all(15),
@@ -24,7 +25,11 @@ class DrawerPage extends StatelessWidget {
                   const SizedBox(height: 5),
                   Text(
                     'Smart Editor for Web-Novel',
-                    style: TextStyle(fontFamily: 'KumarOne', fontSize: 13),
+                    style: TextStyle(
+                      fontFamily: 'KumarOne',
+                      fontSize: 13,
+                      color: Colors.black,
+                    ),
                   ),
                   Divider(
                     thickness: 1,
