@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:mint_note/config/routes/nav_provider.dart';
 import 'package:mint_note/drawer.dart';
 import 'package:mint_note/memo.dart';
 import 'package:mint_note/note.dart';
@@ -44,6 +45,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => SynopsisList()),
         ChangeNotifierProvider(create: (_) => NoteList()),
         ChangeNotifierProvider(create: (_) => MemoList()),
+        ChangeNotifierProvider(create: (_) => NavProvider()),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
