@@ -3,7 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:mint_note/drawer.dart';
 import 'package:mint_note/memo.dart';
 import 'package:mint_note/note.dart';
+import 'package:mint_note/presentation/provider/folder_list.dart';
+import 'package:mint_note/presentation/provider/memo_list.dart';
+import 'package:mint_note/presentation/provider/note_list.dart';
+import 'package:mint_note/presentation/provider/project_list.dart';
+import 'package:mint_note/presentation/provider/synopsis_list.dart';
 import 'package:mint_note/synopsis.dart';
+import 'package:provider/provider.dart';
 import 'package:window_manager/window_manager.dart';
 import 'package:mint_note/config/theme/app_theme.dart';
 
@@ -31,13 +37,22 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'MintNote',
-      theme: AppTheme.lightTheme,
-      darkTheme: AppTheme.darkTheme,
-      themeMode: ThemeMode.system,
-      home: const StartPage(),
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => ProjectList()),
+        ChangeNotifierProvider(create: (_) => FolderList()),
+        ChangeNotifierProvider(create: (_) => SynopsisList()),
+        ChangeNotifierProvider(create: (_) => NoteList()),
+        ChangeNotifierProvider(create: (_) => MemoList()),
+      ],
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'MintNote',
+        theme: AppTheme.lightTheme,
+        darkTheme: AppTheme.darkTheme,
+        themeMode: ThemeMode.system,
+        home: const StartPage(),
+      ),
     );
   }
 }
