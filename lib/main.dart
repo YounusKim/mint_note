@@ -1,18 +1,15 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:mint_note/start.dart';
+import 'package:provider/provider.dart';
+import 'package:window_manager/window_manager.dart';
+import 'package:mint_note/config/theme/app_theme.dart';
 import 'package:mint_note/config/routes/nav_provider.dart';
-import 'package:mint_note/drawer.dart';
-import 'package:mint_note/memo.dart';
-import 'package:mint_note/note.dart';
 import 'package:mint_note/presentation/provider/folder_list.dart';
 import 'package:mint_note/presentation/provider/memo_list.dart';
 import 'package:mint_note/presentation/provider/note_list.dart';
 import 'package:mint_note/presentation/provider/project_list.dart';
 import 'package:mint_note/presentation/provider/synopsis_list.dart';
-import 'package:mint_note/synopsis.dart';
-import 'package:provider/provider.dart';
-import 'package:window_manager/window_manager.dart';
-import 'package:mint_note/config/theme/app_theme.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -54,48 +51,6 @@ class MyApp extends StatelessWidget {
         darkTheme: AppTheme.darkTheme,
         themeMode: ThemeMode.system,
         home: const StartPage(),
-      ),
-    );
-  }
-}
-
-class StartPage extends StatelessWidget {
-  const StartPage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: AppTheme.lightTheme.colorScheme.tertiary,
-      drawer: DrawerPage(),
-      appBar: AppBar(
-        iconTheme: IconThemeData(color: Colors.white),
-        backgroundColor: AppTheme.lightTheme.colorScheme.primary,
-        title: Text(
-          'Mint Note',
-          style: TextStyle(
-            fontFamily: 'KumarOne',
-            fontSize: 16,
-            color: Colors.white,
-          ),
-        ),
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(15),
-        child: Row(
-          children: [
-            Expanded(flex: 1, child: SynopsisPage()),
-            Container(
-              width: 10,
-              color: AppTheme.lightTheme.colorScheme.secondary,
-            ),
-            Expanded(flex: 1, child: NotePage()),
-            Container(
-              width: 10,
-              color: AppTheme.lightTheme.colorScheme.secondary,
-            ),
-            Expanded(flex: 1, child: MemoPage()),
-          ],
-        ),
       ),
     );
   }

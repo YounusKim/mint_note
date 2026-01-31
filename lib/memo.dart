@@ -7,16 +7,21 @@ class MemoPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppTheme.lightTheme.colorScheme.primary,
+      backgroundColor: AppTheme.lightTheme.colorScheme.secondary,
       appBar: AppBar(
-        backgroundColor: AppTheme.lightTheme.colorScheme.primary,
+        backgroundColor: AppTheme.lightTheme.colorScheme.tertiary,
         title: Text(
           'Memo',
           style: TextStyle(
             fontFamily: 'KumarOne',
             fontSize: 14,
-            color: Colors.white,
+            color: Colors.black,
           ),
+        ),
+      ),
+      body: Container(
+        decoration: BoxDecoration(
+          color: AppTheme.lightTheme.colorScheme.secondary,
         ),
       ),
     );

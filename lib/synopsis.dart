@@ -7,15 +7,30 @@ class SynopsisPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppTheme.lightTheme.colorScheme.primary,
+      backgroundColor: Colors.white.withValues(alpha: 0.08),
       appBar: AppBar(
-        backgroundColor: AppTheme.lightTheme.colorScheme.primary,
+        backgroundColor: AppTheme.lightTheme.colorScheme.tertiary,
         title: Text(
           'Synopsis',
           style: TextStyle(
             fontFamily: 'KumarOne',
             fontSize: 14,
-            color: Colors.white,
+            color: Colors.black,
+          ),
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        foregroundColor: AppTheme.lightTheme.colorScheme.primary,
+        backgroundColor: Colors.white,
+        onPressed: () {},
+        child: Icon(Icons.add),
+      ),
+      body: Container(
+        decoration: BoxDecoration(
+          color: AppTheme.lightTheme.colorScheme.secondary,
+          border: Border.all(
+            width: 1,
+            color: AppTheme.lightTheme.colorScheme.tertiary,
           ),
         ),
       ),
