@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mint_note/config/theme/app_theme.dart';
 import 'package:mint_note/presentation/pages/drawer/drawer_header.dart';
 import 'package:mint_note/presentation/pages/drawer/list_container.dart';
 
@@ -49,27 +48,11 @@ class _DrawerPageState extends State<DrawerPage> {
                   children: [
                     const DrawerHeaderWidget(),
                     const SizedBox(height: 5),
-                    Text(
-                      'Mint Note',
-                      style: TextStyle(
-                        fontFamily: 'KumarOne',
-                        fontSize: 16,
-                        color: Colors.black,
-                      ),
-                    ),
-                    Divider(
-                      thickness: 2,
-                      color: AppTheme.lightTheme.colorScheme.secondary,
-                    ),
-                    // const HeaderButtonWidget(),
-                    // Divider(
-                    //   thickness: 2,
-                    //   color: AppTheme.lightTheme.colorScheme.secondary,
-                    // ),
                   ],
                 ),
               ),
-              const SizedBox(height: 8),
+              const SizedBox(height: 5),
+
               ListContainerWidget(
                 selectedPage: selectedPage,
                 genreSelected: onGenreSelected,

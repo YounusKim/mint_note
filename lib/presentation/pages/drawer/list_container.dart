@@ -29,34 +29,22 @@ class _ListContainerWidgetState extends State<ListContainerWidget> {
         child: Column(
           children: [
             _buildCategoryTile(0, 'Fantasy', '판타지', context),
-            Divider(
-              thickness: 2,
-              color: AppTheme.lightTheme.colorScheme.secondary,
-            ),
+            Divider(thickness: 1, color: Colors.black),
             const SizedBox(height: 3),
             _buildCategoryTile(1, 'Wuxia', '무협', context),
             const SizedBox(height: 3),
             _buildCategoryTile(2, 'Lightnovel', '라이트노벨', context),
             const SizedBox(height: 3),
-            Divider(
-              thickness: 2,
-              color: AppTheme.lightTheme.colorScheme.secondary,
-            ),
+            Divider(thickness: 1, color: Colors.black),
             _buildCategoryTile(3, 'Romance', '로맨스', context),
             const SizedBox(height: 3),
             _buildCategoryTile(4, 'Rofan', '로맨스 판타지', context),
             const SizedBox(height: 3),
-            Divider(
-              thickness: 2,
-              color: AppTheme.lightTheme.colorScheme.secondary,
-            ),
+            Divider(thickness: 1, color: Colors.black),
             _buildCategoryTile(5, 'Detective', '추리 & 공포', context),
             const SizedBox(height: 3),
             _buildCategoryTile(6, 'SF', '사이언스 픽션', context),
-            Divider(
-              thickness: 2,
-              color: AppTheme.lightTheme.colorScheme.secondary,
-            ),
+            Divider(thickness: 1, color: Colors.black),
             const SizedBox(height: 3),
           ],
         ),

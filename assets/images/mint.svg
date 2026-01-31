@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   sodipodi:docname="mint.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.77771465"
+     inkscape:cx="397.31796"
+     inkscape:cy="458.39435"
+     inkscape:window-width="1920"
+     inkscape:window-height="1022"
+     inkscape:window-x="0"
+     inkscape:window-y="30"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <rect
+       x="86.14985"
+       y="312.45393"
+       width="489.89691"
+       height="363.88668"
+       id="rect1" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       d="m 76.167449,106.07976 v 98.36283 h 5.138756 v 5.46461 h -29.36432 v -5.46461 h 7.34108 V 106.89945 L 44.821037,209.9072 H 27.569499 L 11.639355,106.35299 v 98.0896 h 7.34108 v 5.46461 H 2.4630051 v -5.46461 H 8.3358695 V 106.07976 H 2.4630051 v -5.4646 H 28.009964 l 15.049214,97.81637 13.727819,-97.81637 h 24.519208 v 5.4646 z M 98.33757,117.00897 87.179128,96.106863 98.410977,75.341376 109.56942,96.243478 Z m 15.26945,87.43362 v 5.46461 H 97.676869 L 90.849668,197.202 v -63.79922 h -5.872864 v -5.46461 h 15.930146 l 6.82721,12.7052 v 63.79922 z m 58.72867,0 v 5.46461 h -16.66425 l -6.0931,-11.33905 v -65.16537 h -5.13876 l -5.13876,9.56304 v 61.47677 h 3.67054 v 5.46461 h -26.42788 v -5.46461 h 5.87287 v -71.03981 h -5.87287 v -5.46461 h 15.93014 l 5.21217,9.56306 5.13875,-9.56306 h 16.81108 l 6.8272,12.7052 v 63.79922 z m 35.60417,-7.24059 -6.8272,12.7052 H 186.50391 L 179.6767,197.202 v -87.02379 h -5.13876 v -5.4646 h 14.82899 l 6.0931,11.33905 v 20.08242 h 10.27751 v 5.46459 h -10.27751 v 62.84292 h 4.03759 l 6.1665,-11.47566 z"
+       id="text1"
+       style="font-size:100.145px;font-family:'Kumar One';-inkscape-font-specification:'Kumar One';stroke-width:1.04317"
+       aria-label="Mint" />
+  </g>
+</svg>
